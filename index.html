@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Yabai2020</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background: rgb(252,244,242);">
+    <div class="row">
+        <div class="col text-center">
+            <h1>2020年ふりかえりNFT</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center"><a href="javascript:register()"><img class="border rounded-pill border-dark" src="assets/img/yabai2020.png"></a></div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <div class="form-group"><input type="text" id="UserAddress" placeholder="0x......(ETHアドレスを入力)"><a class="btn btn-light" role="button" href="javascript:checkNFT()">保有チェック</a></div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="WalletModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">利用するウォレットを選択</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container"><a href="javascript:connectmetamask()" style="padding-left: 10px;"><img src="assets/img/mm-logo.svg"></a><a href="javascript:connecttorus()" style="padding-left: 10px;"><img src="assets/img/torus-wordmark-blue-p-500.png" style="width: 130px;padding-left: 20px;"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/checker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@toruslabs/torus-embed"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.2.7/dist/web3.min.js" integrity="sha256-9rSwSMn4GDjf9FcHmJSvdiKGrk+mNIUmM4ltFDu3MUU=" crossorigin="anonymous"></script>
+</body>
+
+</html>
