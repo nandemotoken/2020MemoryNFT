@@ -16,7 +16,7 @@ async function checkNFT() {
     checked = await fetch('https://blockscout.com/poa/xdai/api/?module=account&action=tokenbalance&contractaddress=0x8C0ead2011191edA54c57d67a5ACFaBb3b9148A6&address=' + address);
     json = await checked.json();
     console.log(json.result)
-    if (json.result == 1 ) {
+    if (json.result != 0 ) {
         window.alert("2020年ふりかえりNFTを持っています。\nエクスプローラーで確認してみましょう");
         window.open("https://blockscout.com/poa/xdai/tokens/0x8C0ead2011191edA54c57d67a5ACFaBb3b9148A6/inventory", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
         } 
